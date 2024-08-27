@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto ajxhdr@gmail.com</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <header></header>
+    <main class="estiloMain">
+        <section class="estiloMain__sectionArea">
+            <!-- Área de entrada de texto -->
+            <textarea id="inputTexto" placeholder="Ingresa tu texto aquí" oninput="limpiarTexto()"></textarea>
+            
+            <div class="estiloMain__botones">
+                <!-- Botones para encriptar y desencriptar -->
+                <button onclick="encriptarTexto()">Encriptar</button>
+                <button onclick="desencriptarTexto()">Desencriptar</button>
+            </div>
+        </section>
+        
+        <section class="estiloMain__sectionArea">
+            <!-- Área para mostrar el texto -->
+            <div class="estiloMain__mostrarTexto" id="mostrarTexto">
+                <div id="textoContenido">Aquí se mostrará el texto</div>
+                <img src="100x100.jpg" id="imagenAntes" alt="Logotipo ajxhdr" />
+            </div>
+            <div class="estiloMain__botones">
+                <button onclick="copiarTexto()">Copiar Texto</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">Hecho por ajxhdr@gmail.com</footer>
+</body>
+</html>
